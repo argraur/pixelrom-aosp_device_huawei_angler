@@ -1,5 +1,5 @@
 #
-# Copyright 2015 The Android Open Source Project
+# Copyright 2017 The Google PixelROM-AOSP project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +14,14 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_angler.mk \
-    $(LOCAL_DIR)/angler.mk
+# Inherit common Open GApps configuration
+$(call inherit-product, vendor/google/build/opengapps-packages.mk)
+
+# Set required variables
+GAPPS_VARIANT := stock
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_FORCE_PIXEL_LAUNCHER := true
+GAPPS_FORCE_BROWSER_OVERRIDES := true
+GAPPS_FORCE_DIALER_OVERRIDES := true
+GAPPS_FORCE_MMS_OVERRIDES := true
+GAPPS_FORCE_WEBVIEW_OVERRIDES := true

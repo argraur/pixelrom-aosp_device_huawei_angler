@@ -93,7 +93,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 26503790080
 BOARD_CACHEIMAGE_PARTITION_SIZE := 104857600
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
-
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.angler
 
 TARGET_RECOVERY_FSTAB = device/huawei/angler/fstab.angler
@@ -139,4 +138,5 @@ BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/angler-setup.sh
 
 USE_CLANG_PLATFORM_BUILD := true
 
+DONT_DEXPREOPT_PREBUILTS := true
 -include vendor/huawei/angler/BoardConfigVendor.mk

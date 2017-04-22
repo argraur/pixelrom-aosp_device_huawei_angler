@@ -16,6 +16,3 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := Huawei
 PRODUCT_RESTRICT_VENDOR_FILES := false
-
-# Only this helps to fix Android internal problem with vendor
-BUILD_FINGERPRINT := "google/angler/angler:7.1.2/N2G47H/3783593:user/release-keys"

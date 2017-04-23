@@ -16,3 +16,8 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := Huawei
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+BUILD_FINGERPRINT := google/angler/angler:7.1.2/N2G47H/3783593:user/release-keys
+
+PRODUCT_PACKAGES += \
+	AOSPLinks
